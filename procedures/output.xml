@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on linux)" generated="2025-07-03T11:09:34.370511" rpa="true" schemaversion="5">
+<suite id="s1" name="Community-Report-Preparation" source="/home/becker/Ops/EGI/CST-RPA/procedures/community-report-preparation.robot">
+<test id="s1-t1" name="Make A New Weekly Report Page" line="20">
+<kw name="Setup" type="SETUP">
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-07-03T11:09:34.575090" level="FAIL">Environment variable '%{CONFLUENCE_USERNAME}' not found.</msg>
+<arg>%{CONFLUENCE_USERNAME}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="FAIL" start="2025-07-03T11:09:34.574124" elapsed="0.001057">Environment variable '%{CONFLUENCE_USERNAME}' not found.</status>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<arg>%{CONFLUENCE_PASSWORD}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" start="2025-07-03T11:09:34.575412" elapsed="0.000100"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<arg>firefox</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="NOT RUN" start="2025-07-03T11:09:34.575716" elapsed="0.000099"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>https://confluence.egi.eu</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2025-07-03T11:09:34.575984" elapsed="0.000084"/>
+</kw>
+<status status="FAIL" start="2025-07-03T11:09:34.573115" elapsed="0.003152">Environment variable '%{CONFLUENCE_USERNAME}' not found.</status>
+</kw>
+<msg time="2025-07-03T11:09:34.583577" level="INFO">Starting Browser process /home/becker/.local/share/mise/installs/python/3.13.5/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:50795</msg>
+<status status="FAIL" start="2025-07-03T11:09:34.572036" elapsed="0.004532">Setup failed:
+Environment variable '%{CONFLUENCE_USERNAME}' not found.</status>
+</test>
+<status status="FAIL" start="2025-07-03T11:09:34.371912" elapsed="0.969310"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Community-Report-Preparation" id="s1" pass="0" fail="1" skip="0">Community-Report-Preparation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,13 @@
+[settings]
+auto_install = true
+activate_aggressive = true
+python.uv_venv_auto = true
+python.default_packages_file = "requirements.txt"
+
+[tools]
+node = "22"
+python = "3"
+
+[tasks.rfbrowser]
+run = "rfbrowser init"
+description = "Setup the robot framework browser"
