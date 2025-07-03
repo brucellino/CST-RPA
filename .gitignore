@@ -208,3 +208,9 @@ __marimo__/
 
 # megalinter
 megalinter-reports
+
+# Robot framework things
+log.html
+output.xml
+playwright-log.txt
+report.html
